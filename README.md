@@ -1,0 +1,1 @@
+Resoluções dos exercicios da lista 3
