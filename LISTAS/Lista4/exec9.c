@@ -7,7 +7,7 @@ int main() {
     int zeros = 0;
     int numero;
     
-    for(int i = 0; i < 5; i++) {
+    for(int i = 0; i < 10; i++) {
         printf("Digite o %dº numero: ", i+1);
         scanf("%d", &numero);
         if(numero > 0) {
