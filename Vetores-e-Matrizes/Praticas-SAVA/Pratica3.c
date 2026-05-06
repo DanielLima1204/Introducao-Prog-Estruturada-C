@@ -14,19 +14,19 @@ int main() {
         scanf(" %c", &letraDigitada);
         switch(letraDigitada){
             case 'a':
-                quantidadeDeVogais[0] = quantidadeDeVogais[0] + 1;
+                quantidadeDeVogais[0]++;
                 break;
             case 'e':
-                quantidadeDeVogais[1] = quantidadeDeVogais[1] + 1;
+                quantidadeDeVogais[1]++;
                 break;
             case 'i':
-                quantidadeDeVogais[2] = quantidadeDeVogais[2] + 1;
+                quantidadeDeVogais[2]++;
                 break;
             case 'o':
-                quantidadeDeVogais[3] = quantidadeDeVogais[3] + 1;
+                quantidadeDeVogais[3]++;
                 break;
             case 'u':
-                quantidadeDeVogais[4] = quantidadeDeVogais[4] + 1;
+                quantidadeDeVogais[4]++;
                 break;    
         }
        
