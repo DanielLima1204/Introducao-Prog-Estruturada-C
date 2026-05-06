@@ -14,11 +14,27 @@
 int main() {
     int numerosDigitados[10];
     int numerosProcessados[10];
-    
+    //Preenchendo array com os numeros do user
     for(int i = 0; i < 10; i++) {
         printf("Digite o %dº numero: ", i+1);
         scanf("%d", &numerosDigitados[i]);
     }
-    
+    //Depois que array de numeros esta completo, posso analisa-lo
+    for(int i = 0; i < 10; i++) {
+        if(numerosDigitados[i] % 2 == 0) {
+            numerosProcessados[i] = numerosDigitados[i+1];
+        } else {
+            if(i != 0) {
+                numerosProcessados[i] = numerosDigitados[i-1];
+            } else {
+                numerosProcessados[i] = numerosDigitados[i];
+            }
+            
+        }
+    }
+    printf("Novo array com numeros processados: \n");
+    for(int i = 0; i < 10; i++) {
+        printf("%d - ", numerosProcessados[i]);
+    }
     return 0;
 }
