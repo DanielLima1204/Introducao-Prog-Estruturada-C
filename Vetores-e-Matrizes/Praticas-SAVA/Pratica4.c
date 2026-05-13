@@ -14,6 +14,7 @@
 int main() {
     int numerosDigitados[10];
     int numerosProcessados[10];
+    
     //Preenchendo array com os numeros do user
     for(int i = 0; i < 10; i++) {
         printf("Digite o %dº numero: ", i+1);
@@ -22,16 +23,16 @@ int main() {
     //Depois que array de numeros esta completo, posso analisa-lo
     for(int i = 0; i < 10; i++) {
         if(numerosDigitados[i] % 2 == 0) {
-            numerosProcessados[i] = numerosDigitados[i+1];
+            numerosProcessados[i] = numerosDigitados[i] + 1;
         } else {
-            if(i != 0) {
-                numerosProcessados[i] = numerosDigitados[i-1];
-            } else {
-                numerosProcessados[i] = numerosDigitados[i];
+            numerosProcessados[i] = numerosDigitados[i] - 1;
             }
-            
-        }
     }
+     printf("Array com numeros digitados: \n");
+    for(int i = 0; i < 10; i++) {
+        printf("%d - ", numerosDigitados[i]);
+    }
+    printf("\n");
     printf("Novo array com numeros processados: \n");
     for(int i = 0; i < 10; i++) {
         printf("%d - ", numerosProcessados[i]);
