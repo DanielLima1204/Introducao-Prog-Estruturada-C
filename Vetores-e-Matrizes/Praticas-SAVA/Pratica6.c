@@ -9,12 +9,26 @@
 #include <stdio.h>
 
 int main() {
-    int alunos[10];
+    char alunos[10][20] = {
+        "Daniel", "Carlos", "Keila", "Josy", "Renan", "Pedro",
+        "Ian", "Jorge", "Gleice", "Diane"
+    };
     float notasPrimeiraProva[10];
-    float notasSegundoProva[10];
+    float notasSegundaProva[10];
     float notasTerceiraProva[10];
     
-    
-    
-    return 0;
-}
+    for(int i = 0; i < 10; i++) {
+        for(int x = 1; x <= 3; x++) {
+            printf("Digite a nota da %dº prova para o aluno %s: ", x, alunos[i]);
+           if(x == 1) {
+               scanf("%f", &notasPrimeiraProva[i]);
+           }
+           if(x == 2) {
+               scanf("%f", &notasSegundaProva[i]);
+           }
+           if(x == 3) {
+               scanf("%f", &notasTerceiraProva[i]);
+           }
+        }
+       
+    }
