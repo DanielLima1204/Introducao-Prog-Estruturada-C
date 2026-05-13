@@ -10,8 +10,9 @@
 
 int main() {
     int alunos[10];
-    int notasPrimeiraProva[10];
-    int notasSegundoProva[10];
+    float notasPrimeiraProva[10];
+    float notasSegundoProva[10];
+    float notasTerceiraProva[10];
     
     
     
