@@ -9,7 +9,6 @@ int main() {
        if(numeros[pos] > maior) {
            maior = numeros[pos];
            posicao = pos+1;
-           
        }
     }
     printf("O maior numero digitado é: %d na posição: %dº", maior, posicao);
